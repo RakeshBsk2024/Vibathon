@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Test Case Generator",
+  "version": "1.0",
+  "description": "Generate structured QA test cases from web pages",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

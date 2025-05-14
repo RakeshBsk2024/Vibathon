@@ -1,0 +1,61 @@
+#floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0066ff;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+#test-case-sidebar {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 16px;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  background: #ddd;
+  padding: 10px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
