@@ -54,12 +54,6 @@ Update the endpoint in contentScript.js accordingly:
 fetch('http://localhost:3000/generate-test-cases' ... )
 // → e.g., replace with: https://your-backend-url/generate-test-cases
 
-📸 Screenshots
- Floating button
- Sidebar with filters + loader
- Grouped, searchable, exportable test cases
-Add your own screenshots or screen recordings here!
-
 🧪 Sample Use Cases
 QA testers generating test cases for login, registration, dashboards
 Product owners validating feature readiness
